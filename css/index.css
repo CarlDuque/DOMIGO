@@ -1,0 +1,251 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size: 22px;
+}
+
+/*HEADER*/
+
+.contenido-header{
+    width: 100%;
+    height:100vh;
+    background-image: url(../img/do1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenido-header .texto{
+    width: 100%;
+    height: 100vh;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Noto Serif',serif;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tomato-light);
+    mix-blend-mode: multiply;
+}
+
+/*MENU*/
+
+.menu{
+    
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Serif',serif;
+    font-style: italic;
+    margin-bottom: 60px;
+    background-color: rgba(214, 211, 207, 0.829);
+}
+
+.menu a{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26px;
+    background-color: var(--coral-medium);
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: var(--gray-light);
+    text-decoration: none;
+}
+
+.menu a:hover{
+    transform: translateY(18px);
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+/*NOSOTROS*/
+
+.nosotros{
+    margin: 60px;
+}
+
+.subtitulo{
+    font-size: 20px;
+    color: var(--orangered-light);
+    font-family: 'Noto Serif',serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo span{
+    background-color: var(--gray-light);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+}
+
+.subtitulo::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: var(--peru-dark);
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+
+.nosotros  .titulo{
+    width: 70%;
+    font-size: 34px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.nosotros .enlace{
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--peru-dark);
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease all;
+}
+
+.nosotros .enlace:hover{
+    text-decoration: none;
+    letter-spacing: 3px;
+    border-bottom: 1px solid var(--orangered-light);
+}
+
+/*PRODUCTOS*/
+
+.productos{
+    background: var(--gray-light);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.productos .titulo{
+    width: 70%;
+    font-size: 34px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.productos .producto{
+    position: relative;
+    width: 100%;
+
+}
+
+.productos .overlay{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--orangered-light);
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.productos .producto:hover .overlay{
+    width: 100%;
+    opacity: .8;
+}
+
+.porductos .producto .overlay-texto{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: chocolate;
+    font-size: 18px;
+    transform: translate(-50% -50%);
+    overflow: hidden;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.productos .btn-productos{
+    background-color: var(--tomato-light);
+    color: #fff;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+}
+
+.productos .btn-productos:hover{
+    background-color: transparent;
+    border: 2px solid var(--tomato-light);
+    color: var(--tomato-light);
+}
+
+/*SEPARADOR*/
+
+.separador{
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/do2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.separador p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Sans Serif',serif;
+    padding: 10px;
+}
+
+/*ACERCA DE*/
+
+.acerca-de{
+    margin-bottom: 60px;
+}
+
+.contacto{
+    margin-bottom: 60px;
+}
+
+.redes-sociales{
+    padding: 10px;
+    background-color: var(--coral-medium);
+}
+
+.redes-sociales img{
+    padding: 5px;
+    border-radius: 100%;
+    width: 50px;
+    transition: .3s ease;
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.2);
+}
